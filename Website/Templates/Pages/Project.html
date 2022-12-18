@@ -2,16 +2,16 @@
 
 {% block content %}
 <div class="container mt-5">
-    <div class="card mb-5" style="max-width: 540px;">
-        <div class="row g-8">
-            <div class="col-md-4">
-                <img src="image.jpg" class="img-fluid rounded-start">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title" class= "fw bold">Lintang Myra Siva</h5>
-                    <p class="card-text">My name is Lintang Myra Siva. my ID number is L200220250 from algorithm class C. i'm the initial display maker for html,css and js.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+    <div class="row mb-5">
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">interpretation</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
 {% endblock content %}

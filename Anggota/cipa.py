@@ -15,8 +15,10 @@ if(pilihan == "1"):
     output = gTTS(text = teks, lang = lang, slow = False)
     output.save("hasilConverter_TexttoSpeech.mp3")
     print("file saved")
+    open("hasilConverter_Texttospeech.mp3")
     playsound.playsound("hasilConverter_TexttoSpeech.mp3", True)
     os.remove("hasilConverter_TexttoSpeech.mp3")
+
 elif(pilihan == "2"):
     engine = sr.Recognizer()
     mic = sr.Microphone()
@@ -37,7 +39,7 @@ elif(pilihan == "2"):
         except Exception as e:
             print(e)
         
-        text_file = open("hasilConverter_TexttoSpeech.txt", "w")
+        text_file = open("hasilConverter_Texttospeech.txt", "w")
         text_file.write(hasil)
         text_file.close()
 else:

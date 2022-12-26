@@ -11,17 +11,36 @@
     </div>
 </div>
 </div>
-<div class="container mt-5">
-    <div class="row mb-5">
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">interpretation</button>
+<!DOCTYPE html>
+<div class="text-center">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Text To Speech by SC</title>
+    <link rel="stylesheet" type="css" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Text To Speech</header>
+      <form action="#">
+        <div class="row">
+          <label>Enter Text</label>
+          <textarea></textarea>
+        </div>
+        <div class="row">
+          <label>Select Voice</label>
+          <div class="outer">
+            <select></select>
+          </div>
+        </div>
+        <button>Convert To Speech</button>
+      </form>
+    </div>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
-  </div>
-</div>
+    <script src="cipa.py"></script>
+
+  </body>
+</html>
+
 {% endblock content %}

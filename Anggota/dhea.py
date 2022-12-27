@@ -9,7 +9,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 
-pa = audioop.PyAudio()
+pa = pyaudio.PyAudio()
 
 stream = pa.open(
     format=FORMAT,

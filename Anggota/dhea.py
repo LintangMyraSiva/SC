@@ -1,4 +1,4 @@
-# python -m pip install pyaudio
+# python by dhea
 import pyaudio
 import wave
 import matplotlib.pyplot as plt

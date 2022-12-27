@@ -4,7 +4,7 @@ Anggota kelompok surya course:
 #3. SuryaAryaPutra = Surya Arya Putra (L200220242)
 #4. DheaMursetyani = Dhea Mursetyani (L220220247)
 #5. JoselynAA = Joselyn Agnes Arianti (L200220276)
-#6.
-#7.
+#6. AdindaRiskyDewi = Adinda Risky Dewi (L200220236)
+#7. AqilaShafaFazira = Aqila Shafa Fazira (L200220264)
 
 

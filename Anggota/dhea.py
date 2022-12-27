@@ -1,5 +1,5 @@
 # python -m pip install pyaudio
-import pyaudio
+import audioop
 import wave
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,7 +9,7 @@ FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
 
-pa = pyaudio.PyAudio()
+pa = audioop.PyAudio()
 
 stream = pa.open(
     format=FORMAT,

@@ -13,11 +13,11 @@ if(pilihan == "1"):
     teks = input("enter a sentence: ")
     lang = 'id'
     output = gTTS(text = teks, lang = lang, slow = False)
-    output.save("hasilConverter_TexttoSpeech.mp3")
+    output.save("hasilConverter_TexttoSpeech.wav")
     print("file saved")
-    open("hasilConverter_Texttospeech.mp3")
-    playsound.playsound("hasilConverter_TexttoSpeech.mp3", True)
-    os.remove("hasilConverter_TexttoSpeech.mp3")
+    open("hasilConverter_Texttospeech.wav")
+    playsound.playsound("hasilConverter_TexttoSpeech.wav", True)
+    os.remove("hasilConverter_TexttoSpeech.wav")
 
 elif(pilihan == "2"):
     engine = sr.Recognizer()
@@ -44,3 +44,4 @@ elif(pilihan == "2"):
         text_file.close()
 else:
     print("Please enter only available options.")
+    

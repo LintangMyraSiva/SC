@@ -59,7 +59,7 @@ audio_array = npy.frombuffer(signal_wave, dtype=npy.int16)
 
 times = npy.linspace(0, time, num=frames)
 
-mpl.figure(figsize=(15, 5))
+mpl.figure(figsize=(10, 5))
 mpl.plot(times, audio_array)
 mpl.ylabel('Signal Wave')
 mpl.xlabel('Time (s)')

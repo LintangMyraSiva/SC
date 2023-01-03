@@ -3,7 +3,7 @@ import speech_recognition as sr
 engine = sr.Recognizer()
 mic = sr.Microphone()
 hasil = ""
-angine.pause_treshold = 3
+engine.pause_treshold = 3
 
 with mic as source:
     print("Silahkan mulai bicara")

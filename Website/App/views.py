@@ -6,3 +6,5 @@ def aboutwe (request):
     return render(request,'Pages/AboutWe.html') 
 def project (request):
     return render(request,'Pages/Project.html') 
+def project (request):
+    return render(request,'Anggota/sound.py')

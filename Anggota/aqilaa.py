@@ -6,9 +6,9 @@ import time
 pygame.init()
 
 bits = 16
-sampe_rate = 44100
+sample_rate = 44100
 
-pygame.mmixer.pre_init(sample_rate, bits)
+pygame.mixer.pre_init(sample_rate, bits)
 
 
 def sine_x(amp, freq, time):

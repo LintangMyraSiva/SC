@@ -1,26 +1,6 @@
 import tkinter as tk
 from playsound import playsound
 from gtts import gTTS
-import pyaudio
-import wave
-import matplotlib.pyplot as mpl
-import numpy as npy
-
-# Membuat Setting fps
-FRAMES_PER_BUFFER = 3200
-FORMAT = pyaudio.paInt16
-CHANNELS = 1
-RATE = 16000
-
-pa = pyaudio.PyAudio()
-
-stream = pa.open(
-    format=FORMAT,
-    channels=CHANNELS,
-    rate=RATE,
-    input=True,
-    frames_per_buffer=FRAMES_PER_BUFFER
-)
 
 # Class dengan nama App 
 class App:

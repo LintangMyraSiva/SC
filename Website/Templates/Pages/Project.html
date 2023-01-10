@@ -18,7 +18,7 @@
     <div class="card rounded-5 shadow p-5">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
-          <img src="{% static 'image/iu.png' %}" class="img-fluid rounded-5 mb-4" alt="...">
+          <img src="{% static 'image/iu.png' %}" class="img-fluid rounded-5 shadow mb-4" alt="...">
           <!-- Audio -->
           <audio autoplay controls loop >
             <source src="{% static 'sound/sound.mp3' %}" type="audio/mpeg" />
@@ -29,14 +29,14 @@
         <div class="col-md-8">
           <div class="card-body">
             <h3 class="card-title fw-bold c2 mb-4">Information of Song:</h3>
-            <p>Title : LILAC</p>
-            <p>Artist : IU</p>
-            <p>Channel : {{channel}}</p>
+            <p>Title      : LILAC</p>
+            <p>Artist     : IU</p>
+            <p>Channel    : {{channel}}</p>
             <p>Frame rate : {{framerate}} fps</p>
-            <p>Frames : {{frames}} bytes</p>
+            <p>Frames     : {{frames}} bytes</p>
             <p>Samp Width : {{sampwidth}}</p>
-            <p>Comptype : {{comptype}}</p>
-            <p>Duration : {{time}} minutes</p>
+            <p>Comptype   : {{comptype}}</p>
+            <p>Duration   : {{time}} minutes</p>
           </div>
         </div>
       </div>

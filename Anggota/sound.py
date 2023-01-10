@@ -8,7 +8,7 @@ class App:
     def __init__(self, root):
         self.root = root
         self.root.title("Ubah Teks Menjadi Suara")
-        self.root.geometry("200x200")
+        self.root.geometry("600x600")
         
         #  Membuat inputan teks
         self.text = tk.StringVar()

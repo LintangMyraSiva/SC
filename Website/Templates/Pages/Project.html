@@ -1,6 +1,8 @@
 {% extends '../Layouts/layout.html' %}
 
 {% block content %}
+{% load static %}
+ 
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 g-4 mb-5 align-items-center">
     <div class="col">
@@ -11,28 +13,31 @@
     </div>
 </div>
 </div>
-<div class="container" style="padding-bottom: 3rem;">
-  <div class="row justify-content-center">
-    <div class="col-4">
-      <div class="card shadow">
-        <div class="card-body">
-          <div class="mb-3">
-            <h3 class="fw-bold">SC Converter</h3>
+<div class="container pb-5">
+  <div class="row">
+    <div class="card rounded-5 shadow p-5">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4">
+          <img src="{% static 'image/iu.png' %}" class="img-fluid rounded-5 mb-4" alt="...">
+          <!-- Audio -->
+          <audio autoplay controls loop >
+            <source src="{% static 'sound/sound.mp3' %}" type="audio/mpeg" />
+          Browsermu tidak mendukung tag audio
+          </audio>
+          <!-- Akhir Audio -->
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title fw-bold c2 mb-4">Information of Song:</h3>
+            <p>Title : LILAC</p>
+            <p>Artist : IU</p>
+            <p>Channel : {{channel}}</p>
+            <p>Frame rate : {{framerate}} fps</p>
+            <p>Frames : {{frames}} bytes</p>
+            <p>Samp Width : {{sampwidth}}</p>
+            <p>Comptype : {{comptype}}</p>
+            <p>Duration : {{time}} minutes</p>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Enter something here</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="add text here ...">
-          </div>
-          <div class="mb-3">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Open this to select menu</option>
-              <option value="1">Text to Voice</option>
-              <option value="2">Voice to Text</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <button class="btn btn-primary">Submit</button>
-          </div>       
         </div>
       </div>
     </div>

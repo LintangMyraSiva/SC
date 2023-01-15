@@ -13,7 +13,7 @@ class song(object): #di dalam song itu ada apa aja
             result = "Stereo"
         return result
 
-    def getFramerate(self): #buat nentuin fps (frek lagu)
+    def getFramerate(self): #buat nentuin fps (frekuensi lagu)
         data = self.song.getframerate()
         return data
 

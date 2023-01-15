@@ -3,7 +3,7 @@ from App.data.readSong import *
 
 def index (request):
     return render(request,'Pages/Home.html') 
-def aboutwe (request):
+def aboutus (request):
     return render(request,'Pages/AboutUs.html') 
 def project (request):
     context = {

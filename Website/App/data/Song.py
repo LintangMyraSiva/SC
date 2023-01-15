@@ -1,11 +1,11 @@
 import wave
 
-class song(object):
+class song(object): #di dalam song itu ada apa aja
 
-    def __init__(self,songName):
-        self.song = wave.open(songName,'r') 
+    def __init__(self,songName): 
+        self.song = wave.open(songName,'r') #ngebaca modul wave
     
-    def getChannel(self):
+    def getChannel(self): #buat nentuin jenis audio
         data = self.song.getnchannels()
         if(data == 1):
             result = "Mono"
@@ -13,15 +13,15 @@ class song(object):
             result = "Stereo"
         return result
 
-    def getFramerate(self):
+    def getFramerate(self): #buat nentuin fps (frek lagu)
         data = self.song.getframerate()
         return data
 
-    def getnFrames(self):
+    def getnFrames(self): 
         data = self.song.getnframes()
         return data
 
-    def getSampWidth(self):
+    def getSampWidth(self): #buat nentuin bytes
         data = self.song.getsampwidth()
         return data
 
@@ -31,9 +31,8 @@ class song(object):
             result = "Not supported to compression."
         else:
             result = "Supported to compression."
-
         return result
 
-    def getTime(self):
+    def getTime(self): #durasi lagu
         time = int(self.getnFrames()/self.getFramerate()/60)
         return time

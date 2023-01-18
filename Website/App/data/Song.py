@@ -29,9 +29,9 @@ class song(object): #di dalam song itu ada apa aja
     def getComptype(self):
         data = self.song.getcomptype()
         if data == "NONE":
-            result = "Not supported to compression."
-        else:
             result = "Supported to compression."
+        else:
+            result = "Not Supported to compression."
         return result
 
     def getTime(self): #durasi lagu

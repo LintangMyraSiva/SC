@@ -1,4 +1,5 @@
 import wave
+import math
 
 class song(object): #di dalam song itu ada apa aja
 
@@ -18,7 +19,7 @@ class song(object): #di dalam song itu ada apa aja
         return data
 
     def getnFrames(self): 
-        data = self.song.getnframes()
+        data = round(int(self.song.getnframes()/48000))
         return data
 
     def getSampWidth(self): #buat nentuin bytes
